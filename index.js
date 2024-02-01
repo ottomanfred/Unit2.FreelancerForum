@@ -74,10 +74,8 @@ function render(allFreelancers) {
 }
 
 function renderAverage() {
-  const $average = document.createElement("p");
-  $average.textContent = `The average price is $${calcAverage()}.`;
   const pAverage = document.querySelector("p.average");
-  pAverage.textContent = $average.textContent;
+  pAverage.textContent = `The average price is $${calcAverage()}.`;
 }
 
 // === Script ===
